@@ -1,0 +1,163 @@
+*{ /*aplicará a todo lo que sea html*/
+    margin: 0; /*margen*/
+    padding: 0;
+}
+
+html, body{
+    left: 0;
+    top: 0;
+    height: 100%; /*alto*/
+    width: 100%; /*ancho*/
+    background-color: grey;
+   
+}
+
+/* CONTENEDORES*/
+.grande{
+    width: 100%;
+    display: flex;
+    background-color: grey;
+}
+
+/* ------ Div izquierda*/
+.izquierda{
+    width: 100%;
+}
+
+/* AQUÍ están los bordes negros para IDENTIFICAR los contenedores */
+/** 1er Contenedor **/
+.presentacion{ 
+    position: relative;
+    height: 50%;
+    width: 99%;
+    border-style: solid;
+}
+
+/** 2do Contenedor **/ 
+.habilidades{
+    position: relative;
+    height: 100%;
+    width: 99%;
+    border-style: solid;
+}
+
+/* ------ Div derecha*/
+.derecha{
+    width: 100%;
+}
+/* 3er contenedor */
+.deco{ 
+    position: relative;
+    height: 50%;
+    width: 99%;
+    border-style: solid;
+
+    display: inline-block;
+    text-align: center;
+
+}
+
+/** 4to contenedor **/
+.datos{
+    position: relative;
+    height: 50%;
+    width: 99%;
+    border-style: solid;
+
+}
+
+
+/** esto para los cuadros de colores, tamaño y posición **/
+.presentacion > div{ 
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 4.5%;
+    width: 70%;
+    height: 35%;
+}
+.habilidades > div{ 
+    position: relative;
+    margin-top: 4.5%;
+    margin-left: 5%;
+    width: 70%;
+    height: 93%;
+}
+.deco > div{ 
+    position: relative;
+    margin-top: 4.5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 85%;
+}
+.datos > div{ 
+    position: relative;
+    margin-top: 4.5%;
+    margin-left: 5%;
+    width: 70%;
+    height: 80%;
+}
+
+
+
+
+
+.header{
+	background: #7186A5;
+    color: #35363A;
+    font-size: 12px;
+    text-align: center;
+	height: 100px;
+	font-family: Helvetica, Arial, sans-serif;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 1; /*esto hace que se SOBREPONGAN elementos, los elementos tienen un valor de indice, 
+    todo tiene el valor de 0 y al header le asignamos un 1*/
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	
+	
+	font-size: 14px;
+	
+	
+	padding-top: 100px; /* Relleno superior igual a la altura de la cabecera*/
+}
+
+.button{
+    position: relative;
+    top: 15px;
+    height: 50px;
+    width: 1500px;
+
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: skyblue;
+    
+}
+
+
+
+
+
+.borde1{
+    border-style: solid;
+}   
+.verde{
+    background: darkgreen;
+}
+.rojo{
+    background: darkorange;
+}
+
+
+
+
+    /*font-size: 100%; /* 100% = 16px */
+    /*font-size: 1em; /* 1em = 16px */
+    /*font-size: 2em; /* 2em = 32px */
